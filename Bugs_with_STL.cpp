@@ -45,7 +45,7 @@ int main() {
 	std::size_t m = myVector.size() + k; 
 
 	// The following lines will throw an exception:
-	//		std::for_each(myVector.begin(), myVector.end() - m, is_odd());	// yikes!
+	//		std::for_each(myVector.begin(), myVector.end() - m, is_odd());		// yikes!
 	//		std::accumulate(myVector.begin() + m, myVector.end(), 0);		// ouch!
 	//		std::accumulate(myVector.end(), myVector.begin(), 0);			// crash!
 
