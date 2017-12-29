@@ -73,7 +73,7 @@ int main() {
 	// http://en.cppreference.com/w/cpp/algorithm/accumulate
 
 	double daily_average = 0.0;
-	daily_average = std::accumulate(prices.begin(), prices.end(), 0) / (double)size;
+	daily_average = std::accumulate(prices.begin(), prices.end(), 0.0) / (double)size;
 	
 
 		// ii. Median price
@@ -82,9 +82,9 @@ int main() {
 	// http://en.cppreference.com/w/cpp/algorithm/partial_sort
 
 	double daily_median = 0.0;
-	std::partial_sort(prices.begin(), prices.begin() + (size / 2), prices.end());
+	std::partial_sort(prices.begin(), prices.begin() + (size / 2) + 1, prices.end());
 
-	daily_median = prices[size / 2];
+	daily_median = prices[size / 2 - 1];
 
 
 		// iii. Max price
