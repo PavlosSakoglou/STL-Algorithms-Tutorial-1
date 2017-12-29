@@ -14,8 +14,6 @@
 #include <algorithm>
 #include <vector>
 #include <iterator>
-#include <chrono>
-#include <random>
 #include <utility> // pair
 
 // Policy (callable object / functor)
@@ -137,21 +135,21 @@ int main() {
 
 	// Print input prices
 	std::cout << "Daily prices: [$]\n\n";
-	for (const auto & price_pair : input_prices) {
+	for (const auto & price_pair : input_prices) 
 		std::cout << price_pair.first << "\t" << price_pair.second << "\n";
-	}
+	
 
 	// Print statistics
 
 	std::cout   << "\n\n";
-	std::cout	<< "Open: "					<< input_prices.begin()->second		<< " [$]\n" 
-				<< "Close: "				<< (input_prices.end() - 1)->second	<< " [$]\n\n"
-				<< "Average price: "		<< daily_average					<< " [$]\n"
-				<< "Median price: "			<< daily_median						<< " [$]\n\n"
-				<< "Max price: "			<< max_price						<< " [$]\n"
-				<< "Min price: "			<< min_price						<< " [$]\n"
-				<< "Price range: "			<< price_range						<< " [$]\n\n"
-				<< "Top 5 price peaks: [$]\t";
+	std::cout   << "Open: "			<< input_prices.begin()->second		<< " [$]\n" 
+		    << "Close: "		<< (input_prices.end() - 1)->second	<< " [$]\n\n"
+		    << "Average price: "	<< daily_average			<< " [$]\n"
+		    << "Median price: "		<< daily_median				<< " [$]\n\n"
+		    << "Max price: "		<< max_price				<< " [$]\n"
+		    << "Min price: "		<< min_price				<< " [$]\n"
+		    << "Price range: "		<< price_range				<< " [$]\n\n"
+		    << "Top 5 price peaks: [$]\t";
 	
 	std::copy(max_5_prices.begin(), max_5_prices.end(), std::ostream_iterator<double>(std::cout, "\t"));
 	std::cout << "\n\n";
