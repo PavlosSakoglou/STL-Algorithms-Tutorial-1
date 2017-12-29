@@ -3,7 +3,7 @@
  *
  *	Problem 2: Computing basic and nth order statistics: average, median, variance, max, min, range, max 5
  *
- *	Solution with STL
+ *	Solution with STL Algorithms
  *
  */
 
