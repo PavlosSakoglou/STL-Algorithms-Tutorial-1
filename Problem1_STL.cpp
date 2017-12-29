@@ -52,7 +52,7 @@ int main() {
 	std::copy(myVector.begin(), myVector.end(), std::back_inserter(increasing));  // O(n)
 
 	// Copy decreasing
-	std::reverse(myVector.begin(), myVector.end());								  // O(n)
+	std::reverse(myVector.begin(), myVector.end());				      // O(n)
 	std::copy(myVector.begin(), myVector.end(), std::back_inserter(decreasing));  // O(n)
 
 	// Print results
