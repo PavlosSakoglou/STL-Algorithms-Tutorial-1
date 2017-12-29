@@ -1,7 +1,7 @@
 /*
  *	Performance in Development
  *
- *	Problem 2: Computring basic and nth order statistics: average, median, variance, max, min, range, max 5
+ *	Problem 2: Computing basic and nth order statistics: average, median, variance, max, min, range, max 5
  *
  *	Solution with STL
  *
