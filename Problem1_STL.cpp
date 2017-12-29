@@ -3,7 +3,7 @@
  *
  *	Problem 1: sort a vector of chars in increasing and decreasing order
  *  
- *	Solution with STL
+ *	Solution with STL Algorithms
  *
  */
 
