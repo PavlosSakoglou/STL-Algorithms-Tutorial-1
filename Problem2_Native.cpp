@@ -195,15 +195,15 @@ int main() {
 	// Print statistics
 
 	std::cout	<< "\n\n";
-	std::cout	<< "Open: "				<< input_prices.begin()->second			<< " [$]\n"
-				<< "Close: "			<< (input_prices.end() - 1)->second		<< " [$]\n\n"
-				<< "Average price: "	<< daily_average						<< " [$]\n"
-				<< "Variance: "			<< variance								<< "\n"
-				<< "Median price: "		<< daily_median							<< " [$]\n\n"
-				<< "Max price: "		<< max_price							<< " [$]\n"
-				<< "Min price: "		<< min_price							<< " [$]\n"
-				<< "Price range: "		<< price_range							<< " [$]\n\n"
-				<< "Top 5 price peaks: [$]\t";
+	std::cout	<< "Open: "			<< input_prices.begin()->second		<< " [$]\n"
+			<< "Close: "			<< (input_prices.end() - 1)->second	<< " [$]\n\n"
+			<< "Average price: "		<< daily_average			<< " [$]\n"
+			<< "Variance: "			<< variance				<< "\n"
+			<< "Median price: "		<< daily_median				<< " [$]\n\n"
+			<< "Max price: "		<< max_price				<< " [$]\n"
+			<< "Min price: "		<< min_price				<< " [$]\n"
+			<< "Price range: "		<< price_range				<< " [$]\n\n"
+			<< "Top 5 price peaks: [$]\t";
 
 	first = max_5_prices.begin();
 	last = max_5_prices.end();
