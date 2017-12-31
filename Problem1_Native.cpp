@@ -121,7 +121,7 @@ int main() {
 
 
 
-	// 5. Copy values to increasing-order vector
+	// 5. Copy values to decreasing-order vector
 	
 	std::vector<char> decreasing;
 
