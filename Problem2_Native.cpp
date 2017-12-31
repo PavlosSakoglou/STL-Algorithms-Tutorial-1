@@ -165,7 +165,7 @@ int main() {
 		variance += std::pow(elem - daily_average, 2);
 	
 	// Compute the unbiased variance
-	variance /= (size - 1);
+	variance /= (double)(size - 1);
 
 
 
