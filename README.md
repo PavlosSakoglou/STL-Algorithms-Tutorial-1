@@ -14,9 +14,11 @@ Introductory STL Algorithms tutorial, introducing concepts, usage, and best prac
 
 5) Performance in development (code above)
 
-6) References
+6) More STL algorithms
 
-7) Q&A
+7) References
+
+8) Q&A
 
 # Usage
 
